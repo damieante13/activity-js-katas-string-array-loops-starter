@@ -9,3 +9,25 @@
 */
 
 // YOUR CODE HERE
+
+const mountainHeight = [27940, 28251, 28169, 29029, 27838];
+
+let position = 0;
+let tallestHeight=0;
+
+while (position < mountainHeight.length){
+ 
+   
+ const currentHeight = mountainHeight[position]
+ if (currentHeight > tallestHeight){
+tallestHeight=currentHeight;
+
+ }
+ position += 1;
+}
+
+
+const outputElement = document.querySelector("main");
+
+outputElement.innerHTML = tallestHeight;
+console.log(tallestHeight); 
